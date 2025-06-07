@@ -19,7 +19,7 @@ def send_bye(message):
 def send_mem(message):
     a = random.randint(1,100)
     if a == 1:
-        images = os.listdir('images')
+        images = os.listdir('images3')
         image = random.choice(images)
         with open(f'images3/{image}', 'rb') as f:  
             bot.send_photo(message.chat.id, f)
